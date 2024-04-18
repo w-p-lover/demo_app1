@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_options">
+        <item>男</item>
+        <item>女</item>
+        <item>塑料袋</item>
+    </string-array>
+    <string-array name='data'>
+        <item>zhangsan</item>
+        <item>lisi</item>
+        <item>wangwu</item>
+    </string-array>
+</resources>

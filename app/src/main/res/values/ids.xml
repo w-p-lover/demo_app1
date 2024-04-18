@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="UserName" type="id" />
+    <item name="choosesex" type="id" />
+    <item name="editUserName" type="id" />
+    <item name="PassWord" type="id" />
+    <item name="Tel" type="id" />
+    <item name="Email" type="id" />
+    <item name="Sex" type="id" />
+    <item name="editEmail" type="id" />
+    <item name="editPassword" type="id" />
+    <item name="buttonblank" type="id" />
+    <item name="buttonread" type="id" />
+    <item name="buttonsave" type="id" />
+    <item name="editTel" type="id" />
+</resources>

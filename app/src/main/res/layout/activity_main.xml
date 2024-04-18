@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerNowUser"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="用户名："
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/UserName"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/PassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUserName"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="密码："
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/PassWord"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPassword"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/Tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="电话："
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Tel"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="phone"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTel"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="邮箱："
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Email"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="性别："
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/choosesex"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Sex"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_bg_rounded"
+            android:entries="@array/spinner_options"
+            android:fontFamily="@font/roboto_regular"
+            android:orientation="horizontal"
+            android:textColor="@color/text_color">
+            <RadioButton
+                android:id="@+id/sex_boy"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="男"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <RadioButton
+                android:id="@+id/sex_girl"
+                android:checked="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="女" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerNowUser"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:entries="@array/data"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/text_color" />
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choosesex"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg_rounded"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="buttonSave_Click"
+        android:text="保存"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsave"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg_rounded"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="buttonAdd_Click"
+        android:text="添加"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/buttondeltet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonblank"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg_rounded"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="buttonDelete_Click"
+        android:text="删除"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonblank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonread"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg_rounded"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="buttonEmpty_Click"
+        android:text="清空"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
